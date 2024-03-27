@@ -1,13 +1,10 @@
-# These are the packages that we are importing that shall be used throughout this Lab
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn import metrics
 import numpy as np
 
-# Read the dataset and look at the head to gauge the column names and whether column names actually exists
 lin_reg_df = pd.read_csv('./realestate.csv ')
-lin_reg_df
 
 # Perform the basic Null Check to decide whether imputation or drop is required
 lin_reg_df.isnull().sum()
